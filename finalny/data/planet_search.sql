@@ -11,8 +11,9 @@ DROP TABLE IF EXISTS Element;
 DROP FUNCTION IF EXISTS composition_check();
 
 CREATE TABLE Element (
+    element_name VARCHAR(16) NOT NULL,
     atomic_number NUMERIC(3) PRIMARY KEY,
-    mass_number NUMERIC(5, 2) NOT NULL
+    mass_number NUMERIC(6, 3) NOT NULL
 );
 
 CREATE TABLE Atmosphere (
