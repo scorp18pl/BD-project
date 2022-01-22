@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 1fr 100px;
+
+    gap: 20px;
+
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    box-sizing: border-box;
+
+    color: #ff8933;
+}
+
+.container div {
+    padding: 10px;
+    border: 1px solid #ff8933;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content-large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
