@@ -18,7 +18,7 @@ body {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 1fr 1fr 100px;
+    grid-template-rows: 65px 1fr 1fr 100px;
 
     gap: 20px;
 
@@ -39,7 +39,7 @@ body {
 }
 
 .header {
-    font-size: 100%;
+    font-size: 150%;
     text-align: center;
 
     grid-column-start: 1;
