@@ -1,467 +1,467 @@
-"Anser",
-"Elgafar",
-"Flegetonte",
-"Heze",
-"Kang",
-"Khambalia",
-"Lich",
-"Malmok",
-"Minelauva",
-"Mönch" ,
-"Porrima",
-"Spica",
-"Syrma",
-"Vindemiatrix",
-"Zaniah",
-"Zavijava",
-"Alsephina",
-"Kalausi",
-"Markeb" ,
-"Natasha",
-"Regor" ,
-"Suhail",
-"Baekdu",
-"Kochab",
-"Pherkad",
-"Polaris",
-"Yildun",
-"Alcor",
-"Alioth" ,
-"Alkaid",
-"Alkaphrah",
-"Alula Australis",
-"Alula Borealis",
-"Aniara",
-"Chalawan",
-"Dombay",
-"Dubhe" ,
-"Intercrus",
-"Liesma",
-"Mazaalai",
-"Megrez",
-"Merak",
-"Mizar",
-"Muscida",
-"Násti",
-"Phecda",
-"Sarir" ,
-"Taiyangshou",
-"Talitha",
-"Tania Australis",
-"Tania Borealis",
-"Emiw",
-"Poerava",
-"Atria",
-"Horna" ,
-"Mothallah",
-"Ain",
-"Alcyone",
-"Aldebaran",
-"Asterope",
-"Atlas",
-"Celaeno",
-"Chamukuy",
-"Electra" ,
-"Elnath",
-"Hoggar",
-"Maia",
-"Merope",
-"Pleione",
-"Prima Hyadum",
-"Secunda Hyadum",
-"Taygeta" ,
-"Tianguan",
-"Bibhā",
-"Alasia",
-"Alya",
-"Gudja",
-"Kaveh",
-"Unukalhai",
-"Cocibolca",
-"Acrab",
-"Alniyat" ,
-"Antares",
-"Dìwö",
-"Dschubba",
-"Fang",
-"Fuyue",
-"Graffias" ,
-"Iklil",
-"Jabbah",
-"Larawag",
-"Lesath" ,
-"Paikauhale",
-"Pipirima",
-"Rapeto",
-"Sargas",
-"Sharjah",
-"Shaula",
-"Xamidimura",
-"Ainalrami",
-"Albaldah" ,
-"Alnasl",
-"Arkab Posterior",
-"Arkab Prior",
-"Ascella",
-"Belel",
-"Gumala",
-"Kaus Australis" ,
-"Kaus Borealis",
-"Kaus Media",
-"Nash",
-"Nunki",
-"Pincoya",
-"Polis",
-"Rukbat",
-"Sika",
-"Terebellum" ,
-"Sansuna",
-"Sham",
-"Uruk",
-"Tupi",
-"Azmidi",
-"Naos",
-"Nosaxa",
-"Tislit",
-"Tureis",
-"Fomalhaut" ,
-"Sāmaya",
-"Alpherg",
-"Alrescha",
-"Bélénos",
-"Citadelle",
-"Ebla",
-"Fumalsamakah",
-"Parumleo",
-"Revati" ,
-"Torcular",
-"Ankaa",
-"Nenque",
-"Wurren",
-"Algol",
-"Atik",
-"Berehynia",
-"Menkib",
-"Miram",
-"Mirfak" ,
-"Misam",
-"Muspelheim",
-"Algenib",
-"Alkarab",
-"Anadolu",
-"Biham",
-"Enif",
-"Helvetios",
-"Homam",
-"Markab" ,
-"Matar",
-"Morava",
-"Sadalbari",
-"Salm",
-"Scheat",
-"Solaris",
-"Tangra",
-"Peacock",
-"Alnilam",
-"Alnitak" ,
-"Bellatrix",
-"Betelgeuse",
-"Hatysa",
-"Meissa",
-"Mintaka",
-"Rigel",
-"Saiph",
-"Tabit",
-"Thabit" ,
-"Barnard 's Star",
-"Cebalrai",
-"Guniibuu",
-"Mahsati",
-"Marfik",
-"Rasalhague",
-"Rosalíadecastro" ,
-"Sabik",
-"Timir",
-"Yed Posterior",
-"Yed Prior",
-"Polaris Australis",
-"Citalá",
-"Lusitânia",
-"Bubup" ,
-"Aladfar",
-"Alathfar" ,
-"Chason",
-"Sheliak",
-"Sulafat",
-"Vega",
-"Xihe",
-"Absolutno",
-"Alsciaukat" ,
-"Gloas",
-"Koit",
-"Stribor",
-"Kakkab",
-"Kekouan" ,
-"Brachium",
-"Zubenelgenubi",
-"Zubenelhakrabi" ,
-"Zubeneschamali",
-"Arneb",
-"Nihal",
-"Illyrian",
-"Praecipua",
-"Adhafera",
-"Algieba",
-"Al Minliar al Asad" ,
-"Alterf",
-"Chertan",
-"Denebola",
-"Dingolay",
-"Formosa",
-"Rasalas",
-"Regulus",
-"Sagarmatha",
-"Shama" ,
-"Subra",
-"Zosma",
-"Taika",
-"Alphard",
-"Ashlesha",
-"Felis",
-"Lerna",
-"Minchir",
-"Ukdah",
-"Zhang",
-"Cujam" ,
-"Franz",
-"Hunor",
-"Irena",
-"Kornephoros",
-"Maasym",
-"Marsic",
-"Ogma",
-"Pipoltr",
-"Rasalgethi",
-"Sarin" ,
-"Aldhanab",
-"Alnair",
-"Itonda",
-"Tiaki",
-"Alhena",
-"Alzirr",
-"Castor",
-"Jishui",
-"Mebsuta",
-"Mekbuda" ,
-"Pollux",
-"Propus",
-"Tejat",
-"Wasat",
-"Dalim",
-"Diya",
-"Intan",
-"Acamar",
-"Achernar",
-"Angetenar" ,
-"Ayeyarwady",
-"Azha",
-"Beemim",
-"Beid",
-"Chaophraya",
-"Cursa",
-"Keid",
-"Koeia",
-"Montuno",
-"Mouhoun" ,
-"Ran",
-"Sceptrum",
-"Theemin",
-"Tojil",
-"Zaurak",
-"Zibal",
-"Kitalpha",
-"Aldhibah",
-"Alrakis",
-"Alruba" ,
-"Alsafi",
-"Altais",
-"Athebyne",
-"Dziban",
-"Edasich",
-"Eltanin",
-"Fafnir",
-"Funi",
-"Giausar",
-"Grumium" ,
-"Kuma",
-"Rastaban",
-"Taiyi",
-"Thuban",
-"Tianyi",
-"Naledi",
-"Aldulfin",
-"Moriah",
-"Musica",
-"Rotanev" ,
-"Sualocin",
-"Albireo",
-"Aljanah",
-"Azelfafage",
-"Deneb",
-"Fawaris",
-"Sadr",
-"Acrux",
-"Gacrux",
-"Ginan" ,
-"Imai",
-"Mimosa",
-"Tupã",
-"Alkes",
-"Amansinaya",
-"Hunahpú",
-"Alchiba",
-"Algorab",
-"Gienah",
-"Kraz" ,
-"Alphecca",
-"Kamuy",
-"Moldoveanu",
-"Nusakan",
-"Meridiana",
-"Diadem",
-"Elkurud",
-"Phact",
-"Wazn",
-"Ceibo" ,
-"Axólotl",
-"Baten Kaitos",
-"Diphda",
-"Felixvarela",
-"Kaffaljidhma",
-"Menkar",
-"Mira",
-"Mpingo",
-"Alderamin" ,
-"Alfirk",
-"Al Kalb al Rai",
-"Errai",
-"Garnet",
-"Kurhah",
-"Dofida",
-"Hadar",
-"Menkent",
-"Nyamien" ,
-"Proxima Centauri",
-"Rigil Kentaurus",
-"Toliman",
-"Uklun",
-"Achird",
-"Caph",
-"Castula",
-"Fulu",
-"Marfak" ,
-"Navi",
-"Nushagak",
-"Ruchbah",
-"Schedar",
-"Segin",
-"Aspidiske",
-"Avior",
-"Canopus",
-"Miaplacidus" ,
-"Tapecue",
-"Algedi",
-"Alshat",
-"Dabih",
-"Deneb Algedi",
-"Nashira",
-"Gomeisa",
-"Procyon",
-"Adhara" ,
-"Aludra",
-"Amadioha",
-"Atakoraka",
-"Furud",
-"Mirzam",
-"Muliphein",
-"Sirius",
-"Unurgunite",
-"Wezen" ,
-"Chara",
-"Cor Caroli",
-"La Superba",
-"Tuiren",
-"Acubens",
-"Asellus Australis",
-"Asellus Borealis" ,
-"Copernicus",
-"Gakyid",
-"Meleph",
-"Nahn",
-"Piautos",
-"Tarf",
-"Tegmine",
-"Mago",
-"Tonatiuh",
-"Alkalurops" ,
-"Arcalís",
-"Arcturus",
-"Asellus Primus",
-"Asellus Secundus",
-"Asellus Tertius",
-"Izar",
-"Merga" ,
-"Muphrid",
-"Nekkar",
-"Nikawiy",
-"Seginus",
-"Xuange",
-"Almaaz",
-"Capella",
-"Haedus",
-"Hassaleh",
-"Lucilinburhuc" ,
-"Mahasim",
-"Menkalinan",
-"Nervia",
-"Saclateni",
-"Tevel",
-"Bharani",
-"Botein",
-"Hamal",
-"Lilii Borea" ,
-"Mesarthim",
-"Sheratan",
-"Cervantes",
-"Inquill",
-"Alshain",
-"Altair",
-"Chechia",
-"Libertas",
-"Okab" ,
-"Petra",
-"Phoenicia",
-"Tarazed",
-"Albali",
-"Ancha",
-"Bosona",
-"Bunda",
-"Lionrock",
-"Márohu",
-"Sadachbia" ,
-"Sadalmelik",
-"Sadalsuud",
-"Situla",
-"Skat",
-"Karaka",
-"Macondo",
-"Adhil",
-"Alamak",
-"Almach",
-"Alpheratz" ,
-"Buna",
-"Mirach",
-"Nembus",
-"Sterrennacht",
-"Titawin",
-"Veritate"
+Anser
+Elgafar
+Flegetonte
+Heze
+Kang
+Khambalia
+Lich
+Malmok
+Minelauva
+Mönch 
+Porrima
+Spica
+Syrma
+Vindemiatrix
+Zaniah
+Zavijava
+Alsephina
+Kalausi
+Markeb 
+Natasha
+Regor 
+Suhail
+Baekdu
+Kochab
+Pherkad
+Polaris
+Yildun
+Alcor
+Alioth 
+Alkaid
+Alkaphrah
+Alula Australis
+Alula Borealis
+Aniara
+Chalawan
+Dombay
+Dubhe 
+Intercrus
+Liesma
+Mazaalai
+Megrez
+Merak
+Mizar
+Muscida
+Násti
+Phecda
+Sarir 
+Taiyangshou
+Talitha
+Tania Australis
+Tania Borealis
+Emiw
+Poerava
+Atria
+Horna 
+Mothallah
+Ain
+Alcyone
+Aldebaran
+Asterope
+Atlas
+Celaeno
+Chamukuy
+Electra 
+Elnath
+Hoggar
+Maia
+Merope
+Pleione
+Prima Hyadum
+Secunda Hyadum
+Taygeta 
+Tianguan
+Bibhā
+Alasia
+Alya
+Gudja
+Kaveh
+Unukalhai
+Cocibolca
+Acrab
+Alniyat 
+Antares
+Dìwö
+Dschubba
+Fang
+Fuyue
+Graffias 
+Iklil
+Jabbah
+Larawag
+Lesath 
+Paikauhale
+Pipirima
+Rapeto
+Sargas
+Sharjah
+Shaula
+Xamidimura
+Ainalrami
+Albaldah 
+Alnasl
+Arkab Posterior
+Arkab Prior
+Ascella
+Belel
+Gumala
+Kaus Australis 
+Kaus Borealis
+Kaus Media
+Nash
+Nunki
+Pincoya
+Polis
+Rukbat
+Sika
+Terebellum 
+Sansuna
+Sham
+Uruk
+Tupi
+Azmidi
+Naos
+Nosaxa
+Tislit
+Tureis
+Fomalhaut 
+Sāmaya
+Alpherg
+Alrescha
+Bélénos
+Citadelle
+Ebla
+Fumalsamakah
+Parumleo
+Revati 
+Torcular
+Ankaa
+Nenque
+Wurren
+Algol
+Atik
+Berehynia
+Menkib
+Miram
+Mirfak 
+Misam
+Muspelheim
+Algenib
+Alkarab
+Anadolu
+Biham
+Enif
+Helvetios
+Homam
+Markab 
+Matar
+Morava
+Sadalbari
+Salm
+Scheat
+Solaris
+Tangra
+Peacock
+Alnilam
+Alnitak 
+Bellatrix
+Betelgeuse
+Hatysa
+Meissa
+Mintaka
+Rigel
+Saiph
+Tabit
+Thabit 
+Barnard 's Star
+Cebalrai
+Guniibuu
+Mahsati
+Marfik
+Rasalhague
+Rosalíadecastro 
+Sabik
+Timir
+Yed Posterior
+Yed Prior
+Polaris Australis
+Citalá
+Lusitânia
+Bubup 
+Aladfar
+Alathfar 
+Chason
+Sheliak
+Sulafat
+Vega
+Xihe
+Absolutno
+Alsciaukat 
+Gloas
+Koit
+Stribor
+Kakkab
+Kekouan 
+Brachium
+Zubenelgenubi
+Zubenelhakrabi 
+Zubeneschamali
+Arneb
+Nihal
+Illyrian
+Praecipua
+Adhafera
+Algieba
+Al Minliar al Asad 
+Alterf
+Chertan
+Denebola
+Dingolay
+Formosa
+Rasalas
+Regulus
+Sagarmatha
+Shama 
+Subra
+Zosma
+Taika
+Alphard
+Ashlesha
+Felis
+Lerna
+Minchir
+Ukdah
+Zhang
+Cujam 
+Franz
+Hunor
+Irena
+Kornephoros
+Maasym
+Marsic
+Ogma
+Pipoltr
+Rasalgethi
+Sarin 
+Aldhanab
+Alnair
+Itonda
+Tiaki
+Alhena
+Alzirr
+Castor
+Jishui
+Mebsuta
+Mekbuda 
+Pollux
+Propus
+Tejat
+Wasat
+Dalim
+Diya
+Intan
+Acamar
+Achernar
+Angetenar 
+Ayeyarwady
+Azha
+Beemim
+Beid
+Chaophraya
+Cursa
+Keid
+Koeia
+Montuno
+Mouhoun 
+Ran
+Sceptrum
+Theemin
+Tojil
+Zaurak
+Zibal
+Kitalpha
+Aldhibah
+Alrakis
+Alruba 
+Alsafi
+Altais
+Athebyne
+Dziban
+Edasich
+Eltanin
+Fafnir
+Funi
+Giausar
+Grumium 
+Kuma
+Rastaban
+Taiyi
+Thuban
+Tianyi
+Naledi
+Aldulfin
+Moriah
+Musica
+Rotanev 
+Sualocin
+Albireo
+Aljanah
+Azelfafage
+Deneb
+Fawaris
+Sadr
+Acrux
+Gacrux
+Ginan 
+Imai
+Mimosa
+Tupã
+Alkes
+Amansinaya
+Hunahpú
+Alchiba
+Algorab
+Gienah
+Kraz 
+Alphecca
+Kamuy
+Moldoveanu
+Nusakan
+Meridiana
+Diadem
+Elkurud
+Phact
+Wazn
+Ceibo 
+Axólotl
+Baten Kaitos
+Diphda
+Felixvarela
+Kaffaljidhma
+Menkar
+Mira
+Mpingo
+Alderamin 
+Alfirk
+Al Kalb al Rai
+Errai
+Garnet
+Kurhah
+Dofida
+Hadar
+Menkent
+Nyamien 
+Proxima Centauri
+Rigil Kentaurus
+Toliman
+Uklun
+Achird
+Caph
+Castula
+Fulu
+Marfak 
+Navi
+Nushagak
+Ruchbah
+Schedar
+Segin
+Aspidiske
+Avior
+Canopus
+Miaplacidus 
+Tapecue
+Algedi
+Alshat
+Dabih
+Deneb Algedi
+Nashira
+Gomeisa
+Procyon
+Adhara 
+Aludra
+Amadioha
+Atakoraka
+Furud
+Mirzam
+Muliphein
+Sirius
+Unurgunite
+Wezen 
+Chara
+Cor Caroli
+La Superba
+Tuiren
+Acubens
+Asellus Australis
+Asellus Borealis 
+Copernicus
+Gakyid
+Meleph
+Nahn
+Piautos
+Tarf
+Tegmine
+Mago
+Tonatiuh
+Alkalurops 
+Arcalís
+Arcturus
+Asellus Primus
+Asellus Secundus
+Asellus Tertius
+Izar
+Merga 
+Muphrid
+Nekkar
+Nikawiy
+Seginus
+Xuange
+Almaaz
+Capella
+Haedus
+Hassaleh
+Lucilinburhuc 
+Mahasim
+Menkalinan
+Nervia
+Saclateni
+Tevel
+Bharani
+Botein
+Hamal
+Lilii Borea 
+Mesarthim
+Sheratan
+Cervantes
+Inquill
+Alshain
+Altair
+Chechia
+Libertas
+Okab 
+Petra
+Phoenicia
+Tarazed
+Albali
+Ancha
+Bosona
+Bunda
+Lionrock
+Márohu
+Sadachbia 
+Sadalmelik
+Sadalsuud
+Situla
+Skat
+Karaka
+Macondo
+Adhil
+Alamak
+Almach
+Alpheratz 
+Buna
+Mirach
+Nembus
+Sterrennacht
+Titawin
+Veritate
