@@ -39,14 +39,19 @@ float RandomNumberGen::getRandom(float min, float max) {
 
 class IdGen {
 public:
-	int getId();
+	int assignId();
+	int getNextId();
 	int getRandomId();
 private:
 	int id = 0;
 };
 
-int IdGen::getId() {
+int IdGen::assignId() {
 	return id++;
+}
+
+int IdGen::getNextId() {
+	return id - 1;
 }
 
 int IdGen::getRandomId() {
@@ -177,7 +182,7 @@ private:
 };
 
 Composition::Composition(int at_id, float concentration)
-	: id(Global::composition_id_gen.getId()) {
+	: id(Global::composition_id_gen.assignId()) {
 	static const int ELEMENT_COUNT = 118;
 	static VGen<int> el_gen(1, ELEMENT_COUNT + 1);
 
@@ -205,7 +210,7 @@ private:
 };
 
 Atmosphere::Atmosphere() 
-	: id(Global::atmosphere_id_gen.getId()), 
+	: id(Global::atmosphere_id_gen.assignId()), 
 	comp_count(RandomNumberGen::getRandom<int>(1, 8)) {
 	static VGen<float> pressure_gen(0.001f, 1000000.0f);
 
@@ -230,7 +235,7 @@ void Atmosphere::print() {
 	}
 	// Complement
 	{
-		Composition c(id, remainder);
+		Composition c(id, remainder * 0.9f);
 		c.print();
 	}
 }
@@ -245,7 +250,7 @@ private:
 };
 
 Race::Race(int atmosphere_id) 
-	: id(Global::Race_id_gen.getId()){
+	: id(Global::Race_id_gen.assignId()){
 	static VGen<int> temp_gen(0, 10000);
 	static VGen<float> grav_gen(0.0f, 100.00f);
 	static VGen<float> hermit_gen(0.0f, 1.0f);
@@ -260,7 +265,7 @@ Race::Race(int atmosphere_id)
 	atts.push_back(Attribute("hermit_level", hermit_gen.getValue()));
 	atts.push_back(Attribute("peacefulness", peace_gen.getValue()));
 
-	bool is_rocky = RandomNumberGen::getRandom<float>(0.0f, 0.1f) > 0.8f;
+	bool is_rocky = RandomNumberGen::getRandom<float>(0.0f, 1.0f) > 0.8f;
 	atts.push_back(Attribute("planet_type", is_rocky ? "'rocky'" : "'gaseous'"));
 	atts.push_back(Attribute("atmosphere", std::to_string(atmosphere_id)));
 
@@ -281,7 +286,7 @@ private:
 };
 
 Planet::Planet(int star) 
-	:id(id) {
+	:id(Global::planet_id_gen.assignId()) {
 
 	static VGen<float> mass_gen(0.0001f, 100.0f);
 	static VGen<float> radius_gen(0.0001f, 100.0f);
@@ -292,7 +297,7 @@ Planet::Planet(int star)
 	atts.push_back(Attribute("id", std::to_string(id)));
 	atts.push_back(Attribute("identif", Global::name_gen.getValue()));
 
-	bool is_rocky = RandomNumberGen::getRandom<float>(0.0f, 0.1f) > 0.8f;
+	bool is_rocky = RandomNumberGen::getRandom<float>(0.0f, 1.0f) > 0.8f;
 	atts.push_back(Attribute("planet_type", is_rocky ? "'rocky'" : "'gaseous'"));
 
 	atts.push_back(Attribute("mass", mass_gen.getValue()));
@@ -302,7 +307,7 @@ Planet::Planet(int star)
 	atts.push_back(Attribute("star", std::to_string(star)));
 	atts.push_back(Attribute("star_distance", star_dist_gen.getValue()));
 
-	bool inhibited = RandomNumberGen::getRandom<float>(0.0f, 0.1f) > 0.8f;
+	bool inhibited = RandomNumberGen::getRandom<float>(0.0f, 1.0f) > 0.8f;
 	atts.push_back(Attribute("alien_aggression_level", inhibited ? aggression_gen.getValue() : "NULL"));
 
 	t = Table("Planet", std::move(atts));
@@ -327,7 +332,7 @@ void Star::print() {
 }
 
 Star::Star(int system_id)
-	:id(Global::star_id_gen.getId()) {
+	:id(Global::star_id_gen.assignId()) {
 	static VGen<float> lum_gen(0.01f, 10000000.0f);
 	static VGen<float> mass_gen(0.01f, 1000.0f);
 
@@ -358,7 +363,7 @@ private:
 };
 
 System::System(int galaxy_id) 
-	:id(Global::system_id_gen.getId()) {
+	:id(Global::system_id_gen.assignId()) {
 	static VGen<float> stab_gen(0.0f, 1.0f);
 
 	std::vector<Attribute> atts;
@@ -376,13 +381,15 @@ System::System(int galaxy_id)
 void System::print() {
 	t.print();
 
+	int first_star_id = Global::star_id_gen.getNextId();
 	for (int i = 0; i < star_count; ++i) {
 		Star s(id);
 		s.print();
 	}
+	int next_star_id = Global::star_id_gen.getNextId();
 
 	for (int i = 0; i < planet_count; ++i) {
-		Planet p(RandomNumberGen::getRandom<int>(0, star_count));
+		Planet p(RandomNumberGen::getRandom<int>(first_star_id, next_star_id));
 		p.print();
 	}
 }
@@ -398,7 +405,7 @@ private:
 };
 
 Galaxy::Galaxy() 
-	:id(Global::galaxy_id_gen.getId()) {
+	:id(Global::galaxy_id_gen.assignId()) {
 	static VGen<int> dist_gen = VGen<int>(0, 100000000);
 
 	std::vector<Attribute> atts;
@@ -425,19 +432,19 @@ public:
 };
 
 void DataGen::start() {
-	static const int ATMOSPHERE_COUNT = 100;
+	static const int ATMOSPHERE_COUNT = 10;
 	for (int i = 0; i < ATMOSPHERE_COUNT; ++i) {
 		Atmosphere a;
 		a.print();
 	}
 
-	static const int GALAXY_COUNT = 100;
+	static const int GALAXY_COUNT = 10;
 	for (int i = 0; i < GALAXY_COUNT; ++i) {
 		Galaxy g;
 		g.print();
 	}
 
-	static const int PREF_COUNT = 100;
+	static const int PREF_COUNT = 10;
 	for (int i = 0; i < PREF_COUNT; ++i) {
 		Atmosphere a;
 		a.print();
