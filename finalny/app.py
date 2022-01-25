@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import create_engine
+from sqlalchemy.sql import text
 
 app = Flask(__name__)
 
@@ -14,7 +16,17 @@ else:
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)
+db = SQLAlchemy(p)
+
+
+
+engine = create_engine('mysql://{USR}:{PWD}@localhost:3306/db', echo=True)
+
+with engine.connect() as con:
+    file = open("src/models/query.sql")
+    query = text(file.read())
+
+    con.execute(query)
 
 class Feedback(db.Model):
     __tablename__ = 'feedback'
