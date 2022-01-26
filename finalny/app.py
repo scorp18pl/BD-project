@@ -1,9 +1,10 @@
-from sqlite3 import connect
 import psycopg2
+from sqlite3 import connect
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import create_engine
 from sqlalchemy.sql import text
+
+from tablenames import *
 
 app = Flask(__name__)
 
@@ -26,7 +27,14 @@ cursor = con.cursor()
 def index():
     cursor.execute("SELECT * FROM planet")
     planets = cursor.fetchall()
-    return render_template('index.html', planets=planets)
+
+    planets_obj = []
+    for planet in planets:
+        planets_obj.append(Planet(planet[0], planet[1], planet[2], 
+                                    planet[3], planet[3], planet[4], 
+                                    planet[5], planet[6], planet[7]))
+
+    return render_template('index.html', planets=planets_obj)
 
 if __name__ == '__main__':
     app.run()
