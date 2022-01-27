@@ -12,24 +12,61 @@
             <div class="header" onclick="location.href='/';">Universal Settlement Assistant</div>
             <div class= "content-small-left">
                 Parameters
-                <p> planet type {{ planet.planet_type }} </p>
-                <p> mass {{ planet.mass }} </p>
-                <p> radius {{ planet.radius }} </p>
-                <p> alien aggression level {{ planet.alien_aggression_level }} </p>
                 <div>
-                    Galaxy info
+                    Planet Info
+                    <div>
+                        planet type = {{ planet.planet_type }}
+                        <br>
+                        mass = {{ planet.mass }} Jupiter M.
+                        <br>
+                        radius = {{ planet.radius }} Jupiter R.
+                        <br>
+                        alien aggression level = {{ planet.alien_aggression_level }}
+                        <br>
+                        distance from star = {{ planet.star_distance }}
+                    </div>
                 </div>
                 <div>
-                    System info
+                    Star Info
+                    <div>
+                        name = {{ star.identif }}
+                        <br>
+                        luminosity = {{ star.luminosity }} Solar L.
+                        <br>
+                        mass = {{ star.mass }} Solar M.
+                    </div>
                 </div>
                 <div>
-                    Star info
-                    <p> star distance {{ planet.star_distance }} </p>
+                    System Info
+                    <div>
+                        name = {{ system.identif }}
+                        <br>
+                        stability = {{ system.stability }}
+                    </div>
+                </div>
+                <div>
+                    Galaxy Info
+                    <div>
+                        name = {{ galaxy.identif }}
+                        <br>
+                        distance = {{ galaxy.distance }} Ly
+                    </div>
                 </div>
             </div>
             <div class= "content-small-mid">
                 <div class= "name-center"> {{ planet.identif }} </div>
                 <img src="../static/planet.png" class="image">
+            </div>
+            <div class="content-small-right"> 
+                Atmosphere Info
+                <p> pressure = {{atmosphere.pressure}} Pa</p>
+                {% for comp in compositions %}
+                <div>
+                    concentration = {{comp.concentration}}
+                    <br>
+                    element atomic number = {{comp.element}}
+                </div>
+                {% endfor %}
             </div>
         </div>
     </body>

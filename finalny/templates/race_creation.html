@@ -13,7 +13,8 @@
             <form action="#" method="POST">
                 <div class= "content-small-left">
                     <div class= "name-center">
-                        <input type="text" value="Race Name", name="name"></input>
+                        <p>{{ error_msg }}</p>
+                        <input type="text" value="Race Name" name="name" required></input>
                         <input type="submit" value="Add Race"></input>
                     </div>
                     Preferences
@@ -41,6 +42,11 @@
                         Planet type
                         <input type="range" min="0" max="1" value="0" class="slider" name="planet_type" oninput="this.nextElementSibling.value = this.value == 0 ? 'rocky' : 'gaseous' ">
                         <output class="output"> rocky </output>
+                    </div>
+                    <div class="slider-div"> 
+                        Favourite element
+                        <input type="range" min="1" max="118" value="1" class="slider" name="fav_elem" oninput="this.nextElementSibling.value = this.value">
+                        <output class="output"> 1 </output>
                     </div>
                 </div>
             </form>
