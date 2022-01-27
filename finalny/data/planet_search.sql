@@ -51,12 +51,12 @@ CREATE TABLE Race (
     id NUMERIC(6) PRIMARY KEY,
     identif VARCHAR(16),
 
-    temperature NUMERIC(4),
-    grav_acc NUMERIC(4, 2),
-    hermit_level NUMERIC(3, 2),
-    peacefulness NUMERIC(3,2),
-    planet_type VARCHAR(16),
-    atmosphere NUMERIC(6) NOT NULL REFERENCES Atmosphere,
+    temperature NUMERIC(4) NOT NULL,
+    grav_acc NUMERIC(4, 2) NOT NULL,
+    hermit_level NUMERIC(3, 2) NOT NULL,
+    peacefulness NUMERIC(3,2) NOT NULL,
+    planet_type VARCHAR(16) NOT NULL,
+    favourite_element NUMERIC(6) REFERENCES Element NOT NULL,
     CONSTRAINT type_check CHECK (planet_type IN ('rocky', 'gaseous')),
     CONSTRAINT h_level_check CHECK ((0.00 <= hermit_level) AND (hermit_level <= 1.00)),
     CONSTRAINT peacefulness_check CHECK ((0.00 <= peacefulness) AND (peacefulness <= 1.00))

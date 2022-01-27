@@ -11,16 +11,13 @@
         <div class="container">
             <div class="header" onclick="location.href='/';">Universal Settlement Assistant</div>
             <div class="content-large">
-                <div> Please Select Your Race </div>
+                <div> Here are the best matches we could find </div>
                 <div> 
-                    {% for race in races %}
+                    {% for planet in planets %}
                     <div>
-                        <a href="/races/{{race.id}}"> {{ race.identif }} </a>
+                        <a href="/planets/{{planet.id}}"> {{ planet.identif }} </a>
                     </div>
                     {% endfor %}
-                    <div>
-                        <a href="/races/create"> Create New </a>
-                    </div>
                 </div>
             </div>
             </div>

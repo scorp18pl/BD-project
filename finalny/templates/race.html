@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../static/style.css">
+        <title>{{ race.identif }} Race Page</title>    
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" onclick="location.href='/';">Universal Settlement Assistant</div>
+            <div class= "content-small-left">
+                Preferences
+                <p> temperature = {{ race.temperature }} K </p>
+                <p> grav_acc = {{ race.grav_acc }} m/s^2</p>
+                <p> hermit_level = {{ race.hermit_level }} </p>
+                <p> peacefulness = {{ race.peacefulness }} </p>
+                <p> planet_type = {{ race.planet_type }} </p>
+                <p> favourite_element = {{ race.favourite_element }} </p>
+            </div>
+            <div class= "content-small-mid">
+                <div class= "name-center"> The {{ race.identif }} Race </div>
+                <img src="../static/raceicon.png" class="image">
+                <button onclick="location.href='/planet_search/{{ race.id }}';"> Find Planet </button>
+            </div>
+        </div>
+    </body>
+</html>

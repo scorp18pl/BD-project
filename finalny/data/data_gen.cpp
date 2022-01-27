@@ -116,6 +116,8 @@ public:
 	static IdGen system_id_gen;
 	static IdGen star_id_gen;
 	static IdGen planet_id_gen;
+
+	static const int ELEMENT_COUNT;
 };
 
 IdGen Global::atmosphere_id_gen_pref = IdGen();
@@ -128,6 +130,8 @@ IdGen Global::galaxy_id_gen = IdGen();
 IdGen Global::system_id_gen = IdGen();
 IdGen Global::star_id_gen = IdGen();
 IdGen Global::planet_id_gen = IdGen();
+
+const int Global::ELEMENT_COUNT = 118;
 
 VGenString Global::name_gen = VGenString("names.txt");
 std::ofstream Global::output_file;
@@ -183,8 +187,7 @@ private:
 
 Composition::Composition(int at_id, float concentration)
 	: id(Global::composition_id_gen.assignId()) {
-	static const int ELEMENT_COUNT = 118;
-	static VGen<int> el_gen(1, ELEMENT_COUNT + 1);
+	static VGen<int> el_gen(1, Global::ELEMENT_COUNT + 1);
 
 	std::vector<Attribute> atts;
 	atts.push_back(Attribute("id", std::to_string(id)));
@@ -242,19 +245,20 @@ void Atmosphere::print() {
 
 class Race {
 public:
-	Race(int atmosphere_id);
+	Race();
 	void print();
 private:
 	int id;
 	Table t;
 };
 
-Race::Race(int atmosphere_id) 
+Race::Race() 
 	: id(Global::Race_id_gen.assignId()){
 	static VGen<int> temp_gen(0, 10000);
 	static VGen<float> grav_gen(0.0f, 100.00f);
 	static VGen<float> hermit_gen(0.0f, 1.0f);
 	static VGen<float> peace_gen(0.0f, 1.0f);
+	static VGen<int> fav_el_gen(1, Global::ELEMENT_COUNT + 1);
 
 	std::vector<Attribute> atts;
 	atts.push_back(Attribute("id", std::to_string(id)));
@@ -267,7 +271,7 @@ Race::Race(int atmosphere_id)
 
 	bool is_rocky = RandomNumberGen::getRandom<float>(0.0f, 1.0f) > 0.8f;
 	atts.push_back(Attribute("planet_type", is_rocky ? "'rocky'" : "'gaseous'"));
-	atts.push_back(Attribute("atmosphere", std::to_string(atmosphere_id)));
+	atts.push_back(Attribute("favourite_element", fav_el_gen.getValue()));
 
 	t = Table("Race", std::move(atts));
 }
@@ -449,8 +453,8 @@ void DataGen::start() {
 		Atmosphere a;
 		a.print();
 
-		Race p(ATMOSPHERE_COUNT + i);
-		p.print();
+		Race r;
+		r.print();
 	}
 }
 

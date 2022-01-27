@@ -48,7 +48,31 @@ body {
 
 .content-large {
     grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content-small-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content-small-mid {
+    grid-column-start: 2;
     grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content-small-right {
+    grid-column-start: 3;
+    grid-column-end: 4;
 
     grid-row-start: 2;
     grid-row-end: 4;
@@ -60,6 +84,16 @@ body {
 
     grid-row-start: 2;
     grid-row-end: 4;
+}
+
+.name-center {
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: 80%; 
+    object-fit: contain;
 }
 
 .slider {
@@ -78,4 +112,12 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+}
+
+form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
 }

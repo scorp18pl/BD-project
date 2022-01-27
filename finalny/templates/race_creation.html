@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../static/style.css">
+        <title>Create a new race</title>    
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" onclick="location.href='/';">Universal Settlement Assistant</div>
+            <form action="#" method="POST">
+                <div class= "content-small-left">
+                    <div class= "name-center">
+                        <input type="text" value="Race Name", name="name"></input>
+                        <input type="submit" value="Add Race"></input>
+                    </div>
+                    Preferences
+                    <div class="slider-div"> 
+                        Temperature
+                        <input type="range" min="0" max="9999" value="300" class="slider" name="temperature" oninput="this.nextElementSibling.value = this.value + ' K'">
+                        <output class="output"> 300 K </output>
+                    </div>
+                    <div class="slider-div"> 
+                        Gravitational acceleration
+                        <input type="range" min="0" max="9999" value="981" class="slider" name="grav_acc" oninput="this.nextElementSibling.value = this.value / 100 + ' m/s^2'">
+                        <output class="output"> 9.81 m/s^2 </output>
+                    </div>
+                    <div class="slider-div"> 
+                        Hermit level
+                        <input type="range" min="0" max="100" value="50" class="slider" name="hermit_lvl" oninput="this.nextElementSibling.value = this.value / 100">
+                        <output class="output"> 0.5 </output>
+                    </div>
+                    <div class="slider-div"> 
+                        Peacefullness
+                        <input type="range" min="0" max="100" value="50" class="slider" name="peace_lvl" oninput="this.nextElementSibling.value = this.value / 100"> 
+                        <output class="output"> 0.5 </output>
+                    </div>
+                    <div class="slider-div"> 
+                        Planet type
+                        <input type="range" min="0" max="1" value="0" class="slider" name="planet_type" oninput="this.nextElementSibling.value = this.value == 0 ? 'rocky' : 'gaseous' ">
+                        <output class="output"> rocky </output>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
