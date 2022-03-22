@@ -1,0 +1,5 @@
+# BD-project
+This project was a part of a Database course taken by me during my
+`COMPUTER SCIENCE` Bachelor's Degree course at `MIM UW`.
+# ACKNOWLEDGEMENTS
+`NOTE THAT THIS PROJECT'S FOCUS WAS THE DATABASE MANAGEMENT AND THE FRONTEND IMPLEMENTATION IS THEREFORE A SIMPLE ONE`
